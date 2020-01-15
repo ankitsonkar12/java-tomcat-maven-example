@@ -1,2 +1,2 @@
 FROM tomcat
-copy /target/webapp-runner.jar /demo.jar
+copy /target/webapp-runner.jar /usr/local/tomcat/webapps/target/webapp-runner.jar
