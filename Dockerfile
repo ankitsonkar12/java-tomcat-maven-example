@@ -8,7 +8,7 @@ RUN tar xvfz apache-tomcat-8.5.50.tar.gz
 RUN mv apache-tomcat-8.5.50/* /usr/local/tomcat
  
 WORKDIR /usr/local/tomcat/webapps
-COPY /target/webapp-runner.war /usr/local/tomcat/webapps
+COPY /target/dependency/webapp-runner.war /usr/local/tomcat/webapps
 RUN ls -la /usr/local/tomcat/webapps/webapp-runner.war
 CMD java -jar /usr/local/tomcat/webapps/webapp-runner.war
 
